@@ -1,50 +1,50 @@
-var x = 5;
-var y = 7;
-var z = x + y;
-console.log(z);
-A = "Hello";
-B = "World";
-var C = A + B;
-console.log(C);
+// var x = 5;
+// var y = 7;
+// var z = x + y;
+// console.log(z);
+// A = "Hello";
+// B = "World";
+// var C = A + B;
+// console.log(C);
 
 
-function sumnPrint(x1, x2) {
-    var x3 = x1 + x2;
-    console.log(x3);
-}
+// function sumnPrint(x1, x2) {
+//     var x3 = x1 + x2;
+//     console.log(x3);
+// }
 
-sumnPrint(x, y);
-sumnPrint(A, B);
+// sumnPrint(x, y);
+// sumnPrint(A, B);
 
-if (C.length > z) {
-    console.log(C);
-    if (C.length < z) {
-        console.log(z);
-    }
-} else {
-    console.log("Good job!");
-}
+// if (C.length > z) {
+//     console.log(C);
+//     if (C.length < z) {
+//         console.log(z);
+//     }
+// } else {
+//     console.log("Good job!");
+// }
 
-L1 = ["Watermelon","Pineapple","Pear","Banana"];
-L2 = ["Apple","Banana","Kiwi","Orange"];
+// L1 = ["Watermelon","Pineapple","Pear","Banana"];
+// L2 = ["Apple","Banana","Kiwi","Orange"];
 
-function findTheBanana(arr) {
-    for(let i = 0; i < arr.length; i++) {
-        if (arr[i] == "Banana") {
-            alert("Banana Found.");
-        }
-    }
-}
+// function findTheBanana(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if (arr[i] == "Banana") {
+//             alert("Banana Found.");
+//         }
+//     }
+// }
 
-// rewrite with forEach()
+// // rewrite with forEach()
 
-function findTheBanana(arr) {
-    arr.forEach(function(item) {
-        if (arr[i] == "Banana") {
-            alert("Banana Found.");
-        }
-    });
-}
+// function findTheBanana(arr) {
+//     arr.forEach(function(item) {
+//         if (arr[i] == "Banana") {
+//             alert("Banana Found.");
+//         }
+//     });
+// }
 
 
 var now = new Date();
