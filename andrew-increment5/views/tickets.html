@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <script src="../static/script.js"></script>
+        <title>Tickets</title>
+    </head>
+    <body onload="addYear()", style="background-color: rgb(241, 233, 250);">
+        <div class="container">
+            <header class="header">
+                <h1>Tickets</h1>
+                <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+            </header>
+            <nav class="nav_bar">
+                <a href="../index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a id="navselected" class="active" href="tickets.html">Buy Tickets</a>
+                <a href="checkout.html">Checkout</a>
+            </nav>
+            <main class="main">
+                <table>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>$Price$</th>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>Student ID required</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Member</td>
+                        <td>Member ID required</td>
+                        <td>$15</td>
+                    </tr>
+                </table>
+                <p></p>
+                <button onclick="showPurchaseForm()">Buy Now</button>
+                <form id="purchaseForm">
+                    <label>Name:</label>
+                    <input type="text">
+
+                    <label>Email:</label>
+                    <input type="email">
+
+                    <label>Number of Tickets:</label>
+                    <input type="number">
+
+                    <label>Selected Date:</label>
+                    <input type="text">
+
+                    <button type="button" onclick="submitPurchase()">Submit</button>
+                </form>
+            </main>
+            <footer class="footer">
+                <p id="copyYear">© MonoMuse. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
