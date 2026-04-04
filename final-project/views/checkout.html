@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <script defer src="../static/script.js"></script>
+        <title>Checkout</title>
+    </head>
+    <body onload="addYear()" style="background-color: rgb(241, 233, 250);">
+        <div class="container">
+            <header class="header">
+                <h1>Checkout</h1>
+                <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+            </header>
+            <nav class="nav_bar">
+                <a href="../index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="tickets.html">Buy Tickets</a>
+                <a id="navselected" class="active" href="checkout.html">Checkout</a>
+            </nav>
+            <main class="main">
+                <p>Select your visit details and place your order below.</p>
+
+                <form id="checkoutForm" novalidate>
+                    <div class="form-group">
+                        <label for="visitDate">Visit Date <span aria-hidden="true">*</span></label>
+                        <input type="date" id="visitDate" name="visitDate" required>
+                        <small class="error-message" id="dateError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ticketType">Ticket Type <span aria-hidden="true">*</span></label>
+                        <select id="ticketType" name="ticketType" required>
+                            <option value="">Select a ticket type</option>
+                            <option value="general">General</option>
+                            <option value="student">Student</option>
+                            <option value="member">Member</option>
+                        </select>
+                        <small class="error-message" id="typeError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ticketQty">Ticket Quantity (1–10) <span aria-hidden="true">*</span></label>
+                        <input type="number" id="ticketQty" name="ticketQty" min="1" max="10" required>
+                        <small class="error-message" id="qtyError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code (optional)</label>
+                        <input type="text" id="zipCode" name="zipCode" maxlength="5" placeholder="15213">
+                        <small class="error-message" id="zipError"></small>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="mailingList" name="mailingList">
+                        <label for="mailingList">Join our mailing list</label>
+                    </div>
+
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <p>Price per ticket: <strong>$18.00</strong></p>
+                        <p>Total: <strong id="totalPrice">$0.00</strong></p>
+                    </div>
+
+                    <button type="submit" id="placeOrderBtn">Place Order</button>
+                </form>
+            </main>
+            <footer class="footer">
+                <p id="copyYear">© MonoMuse. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

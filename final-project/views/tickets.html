@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <script src="../static/script.js"></script>
+        <title>Tickets</title>
+    </head>
+    <body onload="addYear()" style="background-color: rgb(241, 233, 250);">
+        <div class="container">
+            <header class="header">
+                <h1>Tickets</h1>
+                <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+            </header>
+            <nav class="nav_bar">
+                <a href="../index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a id="navselected" class="active" href="tickets.html">Buy Tickets</a>
+                <a href="checkout.html">Checkout</a>
+            </nav>
+            <main class="main">
+                <h2>Ticket Options</h2>
+
+                <table>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>General</td>
+                        <td>General admission for museum visitors.</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>Valid student ID required at entry.</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Member</td>
+                        <td>Available for active MonoMuse members.</td>
+                        <td>$18</td>
+                    </tr>
+                </table>
+                <p></p>
+                <p>Go directly to checkout and choose your date!</p>
+                <a href="checkout.html">Go to Checkout</a>
+            </main>
+            <footer class="footer">
+                <p id="copyYear">© MonoMuse. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
